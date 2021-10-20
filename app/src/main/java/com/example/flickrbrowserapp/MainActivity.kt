@@ -122,7 +122,8 @@ class MainActivity : AppCompatActivity() {
                 val serverID = phot.getJSONObject(i).getString("server")
                 val id = phot.getJSONObject(i).getString("id")
                 val secret = phot.getJSONObject(i).getString("secret")
-                val photoLink = "https://farm$farmID.staticflickr.com/$serverID/${id}_${secret}.jpg"
+              //  val photoLink = "https://farm$farmID.staticflickr.com/$serverID/${id}_${secret}.jpg"
+                val photoLink = "https://live.staticflickr.com/$serverID/${id}_${secret}_b.jpg" //{size-suffix} = b works!
 
                 photos.add(Image(title, photoLink))
             }
