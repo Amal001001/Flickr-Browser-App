@@ -114,7 +114,8 @@ class MainActivity : AppCompatActivity() {
             val jsonObj = JSONObject(data)
             val phot = jsonObj.getJSONObject("photos").getJSONArray("photo")
 
-            for (i in 0..50 ) //until photos.size seems too big
+         //   for (i in 0..50 ) //until photos.size seems too big
+            for (i in 0 until 100) //until photos.size seems too big
             {
                 val title = phot.getJSONObject(i).getString("title")
                 val farmID = phot.getJSONObject(i).getString("farm")
